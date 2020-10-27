@@ -14,6 +14,7 @@
             <?php
                 
                 echo '<table border="1" align="center" width=80%';
+<<<<<<< HEAD
                 
                 foreach($arreglo as $key)
                 {
@@ -23,6 +24,23 @@
                     echo "<td>".$key['cedula']."</td>";
                     echo "</tr>";
                 }
+=======
+                echo "<tr>";
+                echo "<th>Nombre</th>";
+                echo "<th>Apellido</th>";
+                echo "<th>Cedula</th>";
+                echo "<th>Usuario</th>";
+                echo "<th>Rol</th>";
+		echo "</tr>";
+
+		foreach($arreglo as $key){
+			echo "<tr>";
+			echo "<td>".$key['Nombre']."</td>";
+			echo "<td>".$key['Apellido']."</td>";
+			echo "</tr>";
+
+		}
+>>>>>>> aeed3caee04a1e12282ac823a51e9e58b3ef187c
             ?>
         </table>
     </center>
