@@ -12,14 +12,17 @@
         <caption>Usuarios</caption>
         <table>
             <?php
+                
                 echo '<table border="1" align="center" width=80%';
-                echo "<tr>";
-                echo "<th>Nombre</th>";
-                echo "<th>Apellido</th>";
-                echo "<th>Cedula</th>";
-                echo "<th>Usuario</th>";
-                echo "<th>Rol</th>";
-                echo "</tr>";
+                
+                foreach($arreglo as $key)
+                {
+                    echo "<tr>";
+                    echo "<td>".$key['nombre']."</td>";
+                    echo "<td>".$key['apellido']."</td>";
+                    echo "<td>".$key['cedula']."</td>";
+                    echo "</tr>";
+                }
             ?>
         </table>
     </center>
