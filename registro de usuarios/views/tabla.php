@@ -19,7 +19,15 @@
                 echo "<th>Cedula</th>";
                 echo "<th>Usuario</th>";
                 echo "<th>Rol</th>";
-                echo "</tr>";
+		echo "</tr>";
+
+		foreach($arreglo as $key){
+			echo "<tr>";
+			echo "<td>".$key['Nombre']."</td>";
+			echo "<td>".$key['Apellido']."</td>";
+			echo "</tr>";
+
+		}
             ?>
         </table>
     </center>
